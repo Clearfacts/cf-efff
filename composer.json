@@ -1,0 +1,16 @@
+{
+    "name": "clearfacts/e-fff",
+    "description": "E-fff library",
+    "authors": [
+        {
+            "name": "gertvr",
+            "email": "gert.vrebos@tactics.be"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ClearFacts\\": "ClearFacts"
+        }
+    }
+}
