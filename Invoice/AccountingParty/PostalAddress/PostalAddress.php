@@ -1,16 +1,16 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PostalAddress;
+namespace ClearFacts\EFFF\Invoice\AccountingParty\PostalAddress;
 
 use JMS\Serializer\Annotation as Serializer;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PostalAddress\Country\Country;
+use ClearFacts\EFFF\Invoice\AccountingParty\PostalAddress\Country\Country;
 
 /**
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", prefix="cbc")
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", prefix="cac")
  *
  * Class PostalAddress
- * @package Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyName
+ * @package ClearFacts\EFFF\Invoice\AccountingParty\PartyName
  */
 class PostalAddress
 {
@@ -51,7 +51,7 @@ class PostalAddress
     private $postalZone;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PostalAddress\Country\Country")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AccountingParty\PostalAddress\Country\Country")
      * @Serializer\SerializedName("Country")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      *

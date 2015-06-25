@@ -1,22 +1,22 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty;
+namespace ClearFacts\EFFF\Invoice\AccountingParty;
 
 use JMS\Serializer\Annotation as Serializer;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyName\PartyName;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyTaxScheme\PartyTaxScheme;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PostalAddress\PostalAddress;
+use ClearFacts\EFFF\Invoice\AccountingParty\PartyName\PartyName;
+use ClearFacts\EFFF\Invoice\AccountingParty\PartyTaxScheme\PartyTaxScheme;
+use ClearFacts\EFFF\Invoice\AccountingParty\PostalAddress\PostalAddress;
 
 /**
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", prefix="cac")
  *
  * Class Party
- * @package Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty
+ * @package ClearFacts\EFFF\Invoice\AccountingParty
  */
 class Party
 {
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyName\PartyName")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AccountingParty\PartyName\PartyName")
      * @Serializer\SerializedName("PartyName")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      *
@@ -25,7 +25,7 @@ class Party
     private $partyName;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PostalAddress\PostalAddress")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AccountingParty\PostalAddress\PostalAddress")
      * @Serializer\SerializedName("PostalAddress")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      *
@@ -34,7 +34,7 @@ class Party
     private $postalAddress;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyTaxScheme\PartyTaxScheme")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AccountingParty\PartyTaxScheme\PartyTaxScheme")
      * @Serializer\SerializedName("PartyTaxScheme")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      *

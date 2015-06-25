@@ -1,16 +1,16 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice\PaymentMeans;
+namespace ClearFacts\EFFF\Invoice\PaymentMeans;
 
 use JMS\Serializer\Annotation as Serializer;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\PaymentMeans\PayeeFinancialAccount\PayeeFinancialAccount;
+use ClearFacts\EFFF\Invoice\PaymentMeans\PayeeFinancialAccount\PayeeFinancialAccount;
 
 /**
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", prefix="cbc")
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", prefix="cac")
  *
  * Class PaymentMeans
- * @package Tactics\Bundle\ServiceBundle\EFFF\Invoice\PaymentMeans
+ * @package ClearFacts\EFFF\Invoice\PaymentMeans
  */
 class PaymentMeans
 {
@@ -35,7 +35,7 @@ class PaymentMeans
 
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\PaymentMeans\PayeeFinancialAccount\PayeeFinancialAccount")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\PaymentMeans\PayeeFinancialAccount\PayeeFinancialAccount")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("PayeeFinancialAccount")
      *

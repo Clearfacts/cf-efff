@@ -1,6 +1,6 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice\AdditionalDocumentReference;
+namespace ClearFacts\EFFF\Invoice\AdditionalDocumentReference;
 
 use JMS\Serializer\Annotation as Serializer;
 
@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation as Serializer;
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", prefix="cbc")
  *
  * Class AdditionalDocumentReference
- * @package Tactics\Bundle\ServiceBundle\EFFF\Invoice\AdditionalDocumentReference
+ * @package ClearFacts\EFFF\Invoice\AdditionalDocumentReference
  */
 class AdditionalDocumentReference
 {

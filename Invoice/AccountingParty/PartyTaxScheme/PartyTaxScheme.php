@@ -1,6 +1,6 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyTaxScheme;
+namespace ClearFacts\EFFF\Invoice\AccountingParty\PartyTaxScheme;
 
 use JMS\Serializer\Annotation as Serializer;
 
@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation as Serializer;
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", prefix="cbc")
  *
  * Class PartyTaxScheme
- * @package Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingParty\PartyTaxScheme
+ * @package ClearFacts\EFFF\Invoice\AccountingParty\PartyTaxScheme
  */
 class PartyTaxScheme
 {

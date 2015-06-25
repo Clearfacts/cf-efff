@@ -1,6 +1,6 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice\LegalMonetaryTotal;
+namespace ClearFacts\EFFF\Invoice\LegalMonetaryTotal;
 
 use JMS\Serializer\Annotation as Serializer;
 
@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation as Serializer;
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", prefix="cbc")
  *
  * Class LegalMonetaryTotal
- * @package Tactics\Bundle\ServiceBundle\EFFF\Invoice\LegalMonetaryTotal
+ * @package ClearFacts\EFFF\Invoice\LegalMonetaryTotal
  */
 class LegalMonetaryTotal
 {

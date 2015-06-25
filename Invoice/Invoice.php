@@ -1,14 +1,14 @@
 <?php
 
-namespace Tactics\Bundle\ServiceBundle\EFFF\Invoice;
+namespace ClearFacts\EFFF\Invoice;
 
 use JMS\Serializer\Annotation as Serializer;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingCustomerParty\AccountingCustomerParty;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingSupplierParty\AccountingSupplierParty;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\AdditionalDocumentReference\AdditionalDocumentReference;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\LegalMonetaryTotal\LegalMonetaryTotal;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\PaymentMeans\PaymentMeans;
-use Tactics\Bundle\ServiceBundle\EFFF\Invoice\TaxTotal\TaxTotal;
+use ClearFacts\EFFF\Invoice\AccountingCustomerParty\AccountingCustomerParty;
+use ClearFacts\EFFF\Invoice\AccountingSupplierParty\AccountingSupplierParty;
+use ClearFacts\EFFF\Invoice\AdditionalDocumentReference\AdditionalDocumentReference;
+use ClearFacts\EFFF\Invoice\LegalMonetaryTotal\LegalMonetaryTotal;
+use ClearFacts\EFFF\Invoice\PaymentMeans\PaymentMeans;
+use ClearFacts\EFFF\Invoice\TaxTotal\TaxTotal;
 
 /**
  * @Serializer\ExclusionPolicy("none")
@@ -17,7 +17,7 @@ use Tactics\Bundle\ServiceBundle\EFFF\Invoice\TaxTotal\TaxTotal;
  * @Serializer\XmlNamespace(uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", prefix="cac")
  *
  * Class Invoice
- * @package Tactics\Bundle\ServiceBundle\EFFF
+ * @package ClearFacts\EFFF
  */
 class Invoice
 {
@@ -70,7 +70,7 @@ class Invoice
     private $documentCurrencyCode;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\PaymentMeans\PaymentMeans")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\PaymentMeans\PaymentMeans")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("PaymentMeans")
      *
@@ -79,7 +79,7 @@ class Invoice
     private $paymentMeans;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\LegalMonetaryTotal\LegalMonetaryTotal")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\LegalMonetaryTotal\LegalMonetaryTotal")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("LegalMonetaryTotal")
      *
@@ -88,7 +88,7 @@ class Invoice
     private $legalMonetaryTotal;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AdditionalDocumentReference\AdditionalDocumentReference")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AdditionalDocumentReference\AdditionalDocumentReference")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("AdditionalDocumentReference")
      *
@@ -97,7 +97,7 @@ class Invoice
     private $additionalDocumentReference;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingSupplierParty\AccountingSupplierParty")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AccountingSupplierParty\AccountingSupplierParty")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("AccountingSupplierParty")
      *
@@ -106,7 +106,7 @@ class Invoice
     private $accountingSupplierParty;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\AccountingCustomerParty\AccountingCustomerParty")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\AccountingCustomerParty\AccountingCustomerParty")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("AccountingCustomerParty")
      *
@@ -115,7 +115,7 @@ class Invoice
     private $accountingCustomerParty;
 
     /**
-     * @Serializer\Type("Tactics\Bundle\ServiceBundle\EFFF\Invoice\TaxTotal\TaxTotal")
+     * @Serializer\Type("ClearFacts\EFFF\Invoice\TaxTotal\TaxTotal")
      * @Serializer\XmlElement(namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")
      * @Serializer\SerializedName("TaxTotal")
      *
