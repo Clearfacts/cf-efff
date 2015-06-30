@@ -3,12 +3,14 @@
 namespace ClearFacts\EFFF\Invoice;
 
 use JMS\Serializer\Annotation as Serializer;
+use JMS\Serializer\Annotation\ExclusionPolicy;
 use ClearFacts\EFFF\Invoice\AccountingCustomerParty\AccountingCustomerParty;
 use ClearFacts\EFFF\Invoice\AccountingSupplierParty\AccountingSupplierParty;
 use ClearFacts\EFFF\Invoice\AdditionalDocumentReference\AdditionalDocumentReference;
 use ClearFacts\EFFF\Invoice\LegalMonetaryTotal\LegalMonetaryTotal;
 use ClearFacts\EFFF\Invoice\PaymentMeans\PaymentMeans;
 use ClearFacts\EFFF\Invoice\TaxTotal\TaxTotal;
+
 
 /**
  * @Serializer\ExclusionPolicy("none")
