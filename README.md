@@ -11,3 +11,8 @@ For more information see [cf-docs](https://github.com/Clearfacts/cf-docs/blob/66
 - Clone the project from github
 - `cd <folder-name>`
 - `make init`
+
+## Technical debt links
+
+[Barometer IT](https://wolterskluwer.barometerit.com/b/system/041800002496)
+[SonarQube Project](https://sonarqube.cloud-dev.wolterskluwer.eu//dashboard?id=clearfacts%3Acf-efff)
